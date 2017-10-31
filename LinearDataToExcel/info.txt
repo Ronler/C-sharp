@@ -1,0 +1,1 @@
+A data file parser for spin linear data for excel.

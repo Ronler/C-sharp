@@ -1,0 +1,26 @@
+﻿<Window x:Class="XPol.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cross_Polarization" Height="350" Width="525">
+    <Grid Background="LightGray">
+        <Label Content="Calculate cross-polarization"/>
+        <StackPanel Margin="10,30,10,0">
+            <Label Content="Amplitude (horizontal)" Height="28" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Amp1" Text="0.00" Height="20" Width="120" HorizontalAlignment="Left"/>
+            <Label Content="Amplitude (vertical)" Height="25" Width="130" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Amp2" Text="0.00" Height="20" Width="120" HorizontalAlignment="Left"/>
+            <Label Content="Phase (horizontal)" Height="25" Width="120" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Phase1" Text="4.141" Height="20" Width="120" HorizontalAlignment="Left"/>
+            <Label Content="Phase (vertical)" Height="25" Width="120" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Phase2" Text="90" Height="20" Width="120" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <TextBlock x:Name="AR_dB" TextAlignment="Center" Height="30" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="24,70,26,0" Grid.Column="1"/>
+        <Label Content="  Axial Ratio (dB)" Height="30" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24,100,26,190" Grid.Column="1"/>
+        <TextBlock x:Name="XP" TextAlignment="Center" Height="30" Width="80" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,70,100,0" Grid.Column="2"/>
+        <Label Content="    X-P (dB)" Height="30" Width="80" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,95,100,0" Grid.Column="2"/>
+        <Button Content="Axial Ratio and Cross-Pol" Height="30" Width="150" Click="Calculate_click" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,30,125,0" Grid.Column="1" IsDefault="True"/>
+        <Button Content="Close" Height="30" Width="70" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="Button_Click" Grid.Column="2"/>
+        <Label Content=" LHCP or RHCP?" Height="30" Width="95" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,160,0"/>
+        <TextBlock x:Name="CPD" TextAlignment="Center" Height="30" Width="80" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,180,168,0"/>
+    </Grid>
+</Window>
